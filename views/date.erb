@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ERB Practice</title>
+  </head>
+  <body>
+    <h1>
+      Today
+    </h1>
+    <p>
+      <% t = DateTime.now %>
+      <%= "The date is #{t.strftime("%A, %B %e, %Y")}" %>
+    </p>
+  </body>
+</html>
