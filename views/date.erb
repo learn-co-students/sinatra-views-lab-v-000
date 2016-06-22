@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <% time = Time.now %>
+  <% 
+      months = {
+       1=> "January", 2=> "February", 3=> "March",
+       4=> "April", 5=> "May", 6=> "June"
+      }
+      
+      days = {
+        1=> "Monday", 2=> "Tuesday", 3=> "Wednesday"
+      }
+  %>
+  <% ts = "#{days[time.wday]}, #{months[time.month]} #{time.day}, #{time.year}" %>
+  <p>
+    <%= "The date is  " + ts %>
+  </p>
+</body>
+</html>
