@@ -1,0 +1,26 @@
+<!-- 3. Create a template called `date.erb` in `views` that
+gets rendered via GET `/date`. It should contain an
+`h1` with the content `Today`
+Using ERB tags, and the DateTime library,
+display today's date in a `p` tag.
+ The date should be formatted to look something like this
+ `The date is Wednesday, November 18, 2015`. -->
+<% require 'date'
+%>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sinatra Views Lab</title>
+  </head>
+
+  <body>
+    <h1>Today</h1>
+    <%today = Date.today%>
+      <p>The date is <%=today.strftime("%A")%>, <%=today.strftime("%B")%> <%=today.strftime("%e")%>, <%=today.strftime("%Y")%>.</p>
+  </body>
+
+
+
+
+</html>
