@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> TIME </title>
+  </head>
+  <body>
+    <h1> Today </h1>
+      <% time1 = Time.new
+      time_array = time1.inspect.split[0].split("-")
+        #=> ["2016", "07", "01"]
+        time_day = time1.wday.to_i
+          case time_day 
+            when 1 
+              "Monday"
+            when 2
+              "Tuesday"
+            when 3
+              "Wednesday"
+            when 4
+              "Thursday"
+            when 5
+              "Friday"
+            when 6
+              "Saturday"
+            when 7
+              "Sunday"
+          end 
+        time_month = time1.month.to_i
+          case time_month 
+            when 1 
+              "January"
+            when 2
+              "February"
+            when 3
+              "March"
+            when 4
+              "April"
+            when 5
+              "May"
+            when 6
+              "June"
+            when 7
+              "July"
+            when 8
+              "August"
+            when 9
+              "September"
+            when 10
+              "October"
+            when 11
+              "November"
+            when 12
+              "December"
+          end
+           %>
+
+      <p>The date is 
+      <%="#{time_day}"%>, <%="#{time_month}"%> <%="#{time_array[2]}"%>, <%="#{time_array[0]}"%> 
+      </p>
+  </body>
