@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+    </head>
+    <body>
+      <% name = "Joe" %>
+        <h1>Today</h1>
+        <p>
+          <% t = Time.now %>
+          The date is <%= "#{t.strftime('%A')}" %>, <%= "#{t.strftime('%B')}" %> <%= "#{t.strftime('%d')}" %>, <%= "#{t.strftime('%Y')}" %>
+        </p>
+    </body>
+</html>
