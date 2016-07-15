@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Date</title>
+  </head>
+  <body>
+    <% weekday = Time.now.strftime('%A') %>
+    <% date = Time.now.strftime('%B %-d, %Y') %>
+    <%= "The date is " + weekday + ", " + date %>
+  </body>
+</html>
