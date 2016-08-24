@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1>Today</h1>
-    <% @time = Time.now %>
+<!--     <% @time = Time.now %>
     <% if @time.wday == 0 %>
       <% @weekday = "Sunday" %>
     <% elsif @time.wday == 1 %>
@@ -48,6 +48,7 @@
       <% @month = "December" %>
     <% end %>
 
-    <p>The date is <%= @weekday %>, <%= @month %> <%= @time.day %>, <%= @time.year %>.</p>
+    <p>The date is <%= @weekday %>, <%= @month %> <%= @time.day %>, <%= @time.year %>.</p> -->
+    <p> The date is <%= Date.today.strftime("%A, %B %d, %Y") %></p>
   </body>
 </html>
