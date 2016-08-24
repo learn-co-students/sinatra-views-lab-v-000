@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Today</title>
+  </head>
+  <body>
+    <h1>Today</h1>
+    <% @time = Time.now %>
+    <% if @time.wday == 0 %>
+      <% @weekday = "Sunday" %>
+    <% elsif @time.wday == 1 %>
+      <% @weekday = "Monday" %>
+    <% elsif @time.wday == 2 %>
+      <% @weekday = "Tuesday" %>
+    <% elsif @time.wday == 3 %>
+      <% @weekday = "Wednesday" %>
+    <% elsif @time.wday == 4 %>
+      <% @weekday = "Thursday" %>
+    <% elsif @time.wday == 5 %>
+      <% @weekday = "Friday" %>
+    <% else %>
+      <% @weekday = "Saturday" %>
+    <% end %>
+
+    <% if @time.month == 1 %>
+      <% @month = "January" %>
+    <% elsif @time.month == 2 %>
+      <% @month = "February" %>
+    <% elsif @time.month == 3 %>
+      <% @month = "March" %>
+    <% elsif @time.month == 4 %>
+      <% @month = "April" %>
+    <% elsif @time.month == 5 %>
+      <% @month = "May" %>
+    <% elsif @time.month == 6 %>
+      <% @month = "June" %>
+    <% elsif @time.month == 7 %>
+      <% @month = "July" %>
+    <% elsif @time.month == 8 %>
+      <% @month = "August" %>
+    <% elsif @time.month == 9 %>
+      <% @month = "September" %>
+    <% elsif @time.month == 10 %>
+      <% @month = "October" %>
+    <% elsif @time.month == 11 %>
+      <% @month = "November" %>
+    <% else %>
+      <% @month = "December" %>
+    <% end %>
+
+    <p>The date is <%= @weekday %>, <%= @month %> <%= @time.day %>, <%= @time.year %>.</p>
+  </body>
+</html>
