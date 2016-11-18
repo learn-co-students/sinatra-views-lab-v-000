@@ -1,7 +1,4 @@
 <html>
 <h1>Today</h1>
-<%now= Time.parse(Time.now)%>
-now.strftime("%d-%M-%d")
-<!--<%date= :now.day + " " + :now.month + " " + :now.date + "," + :now.year" %> -->
-<p><%=date%>
+<p>The date is <%= Date.today.strftime("%A, %B %d, %Y") %>
 </html>
