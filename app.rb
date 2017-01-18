@@ -4,5 +4,16 @@ class App < Sinatra::Base
 		erb :index
 	end
 
+  get '/hello' do
+    erb :hello
+  end
 
+  get '/date' do
+    erb :date
+  end
+
+  get '/goodbye' do
+    @name = 'Joe'
+    erb :goodbye
+  end
 end
