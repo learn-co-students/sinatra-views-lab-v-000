@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+    <head></head>
+    <body>
+        <h1>Today</h1>
+        <p>
+            <% weekday = Time.now.strftime("%A") %>
+            <% month = Time.now.strftime("%B") %>
+            <% num_date = Time.now.day %>
+            <% year = Time.now.year %>
+            The date is <%=weekday%>, <%=month%> <%=num_date%>, <%=year%>
+        </p>
+    </body>
+</html>
