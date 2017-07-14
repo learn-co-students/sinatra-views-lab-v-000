@@ -1,0 +1,49 @@
+<% time = Time.now %>
+<% month_fixnum = time.month %>
+<% weekday_fixnum = time.wday %>
+<% day = time.day %>
+<% year = time.year %>
+<% if weekday_fixnum == 0 %>
+	<% weekday = "Sunday" %>
+<% elsif weekday_fixnum == 1 %>
+	<% weekday = "Monday" %>
+<% elsif weekday_fixnum == 2 %>
+	<% weekday = "Tuesday" %>
+<% elsif weekday_fixnum == 3 %>
+	<% weekday = "Wednesday" %>
+<% elsif weekday_fixnum == 4 %>
+	<% weekday = "Thursday" %>
+<% elsif weekday_fixnum == 5 %>
+	<% weekday = "Friday" %>
+<% elsif weekday_fixnum == 6 %>
+	<% weekday = "Saturday" %>
+<% end %>
+
+<% if month_fixnum == 1 %>
+	<% month = "January" %>
+<% elsif month_fixnum == 2 %>
+	<% month = "February" %>
+<% elsif month_fixnum == 3 %>
+	<% month = "March" %>
+<% elsif month_fixnum == 4 %>
+	<% month = "April" %>
+<% elsif month_fixnum == 5 %>
+	<% month = "May" %>
+<% elsif month_fixnum == 6 %>
+	<% month = "June" %>
+<% elsif month_fixnum == 7 %>
+	<% month = "July" %>
+<% elsif month_fixnum == 8 %>
+	<% month = "August" %>
+<% elsif month_fixnum == 9 %>
+	<% month = "September" %>
+<% elsif month_fixnum == 10 %>
+	<% month = "October" %>
+<% elsif month_fixnum == 11 %>
+	<% month = "November" %>
+<% elsif month_fixnum == 12 %>
+	<% month = "December" %>
+<% end %>
+
+<h1>Today</h1>
+<p><%= "The date is #{weekday}, #{month} #{day}, #{year}" %></p>
