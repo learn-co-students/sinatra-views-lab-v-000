@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <h1>Today</h1>
-  <%time = Time.now%>
+  <!-- <%time = Time.now%>
   <%day = time.strftime("%A")%>
   <%month = time.strftime("%B")%>
   <%date = time.strftime("%d")%>
   <%year = time.strftime("%Y")%>
-  <p><%="The date is #{day}, #{month} #{date}, #{year}."%></p>
+  <p><%="The date is #{day}, #{month} #{date}, #{year}."%></p> -->
+  <p> The date is <%= Date.today.strftime("%A, %B %d, %Y") %></p>
 </html>
