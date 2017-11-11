@@ -5,51 +5,7 @@
 </head>
 <body>
   <h1><%= "Today" %></h1>
-  <% date = Time.now %>
-  <% year = date.year%>
-  <% month = date.month%>
-  <% day = date.day%>
-
-  <%if month == 1 %>
-    <% month_string = "January"%>
-  <% elsif month == 2%>
-    <% month_string = "February"%>
-  <% elsif month == 3%>
-    <% month_string = "March"%>
-  <% elsif month == 4%>
-    <% month_string = "April"%>
-  <% elsif month == 5%>
-    <% month_string = "May"%>
-  <% elsif month == 6%>
-    <% month_string = "June"%>
-  <% elsif month == 7%>
-    <% month_string = "July"%>
-  <% elsif month == 8%>
-    <% month_string = "August"%>
-  <% elsif month == 9%>
-    <% month_string = "September"%>
-  <% elsif month == 10%>
-    <% month_string = "October"%>
-  <% elsif month == 11%>
-    <% month_string = "November"%>
-  <% else %>
-    <% month_string = "December"%>
-  <% end%>
-  <%if date.monday? %>
-    <% day_string = "Monday"%>
-  <%elsif date.tuesday? %>
-    <% day_string = "Tuesday"%>
-  <%elsif date.wednesday? %>
-    <% day_string = "Wednesday"%>
-  <%elsif date.thursday?%>
-    <% day_string = "Thursday"%>
-  <%elsif date.friday?%>
-    <% day_string = "Friday"%>
-  <%elsif date.saturday?%>
-    <% day_string = "Saturday"%>
-  <%else%>
-    <% day_string = "Sunday"%>
-    <%end%>
-  <p>The date is <%= day_string %>, <%= month_string%> <%= day %>, <%= year %>.</p>
+  <% date = Date.today.strftime("%A, %B %d, %Y")%>
+  <p>The date is <%= date %></p>
 </body>
 </html>
