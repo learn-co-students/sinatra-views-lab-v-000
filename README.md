@@ -9,7 +9,7 @@
 
 This lesson practices creating ERB views and rendering them from a Sinatra Action in response to an HTTP request. Fork and clone this repository and run `bundle install` to get started!
 
-## Instructions
+## Instructionssd
 
 For each of the following examples, create a .erb file in the `views` directory and a route in `app.rb` which renders that template. Make sure each template contains the requested content.
 
