@@ -14,7 +14,11 @@ Using ERB tags, and the DateTime library, display today's date in a p tag. The d
 
               <h1>Today</h1>
               <% now = Time.now %>
-              <p>The date is <%= now.strftime("%A") %>, <%= now.strftime("%B") %> <%= now.strftime("%d") %>, <%= now.strftime("%Y") %></p>
+              <p>The date is <%= now.strftime("%A, %B %d, %Y") %>
 
         </body>
      </html>
+
+
+<!-- the code could have also have been written............ -->
+<!--     <p> The date is <%= Date.today.strftime("%A, %B %d, %Y") %></p>  -->
