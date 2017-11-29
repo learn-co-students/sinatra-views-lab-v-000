@@ -1,0 +1,20 @@
+
+<!--Create a template called date.erb in views that gets rendered via GET /date. It should contain an h1 with the content Today
+Using ERB tags, and the DateTime library, display today's date in a p tag. The date should be formatted to look something like this The date is Wednesday, November 18, 20-->
+
+
+
+<!DOCTYPE html>
+     <html>
+         <head>
+             	<title>Que hora es?</title>
+         </head>
+         <body>
+
+
+              <h1>Today</h1>
+              <% now = Time.now %>
+              <p>The date is <%= now.strftime("%A") %>, <%= now.strftime("%B") %> <%= now.strftime("%d") %>, <%= now.strftime("%Y") %></p>
+
+        </body>
+     </html>
