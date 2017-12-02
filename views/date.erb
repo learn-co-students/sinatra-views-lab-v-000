@@ -1,0 +1,10 @@
+<!DOCTYPE>
+<html>
+  <h1>Today</h1>
+  <% time = Time.now %>
+  <% day_of_week = time.strftime("%A") %>
+  <% date = time.strftime("%d") %>
+  <% month = time.strftime("%B") %>
+  <% year = time.year %>
+  <p>The date is <%= day_of_week %>, <%= month %> <%= date %>, <%= year %></p>
+</html>
