@@ -5,12 +5,9 @@
     <title>Date</title>
   </head>
   <body>
-    <%today = Date.today
-      day = today.day
-      month = today.month
-      year = today.year
-    %>
+    <%today = DateTime.now.strftime('%A, %B %-d, %Y')%>
 
     <h1>Today</h1>
+    <p>The date is <%= today %></p>
   </body>
 </html>
