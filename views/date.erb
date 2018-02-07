@@ -1,0 +1,13 @@
+<h1>Today</h1>
+
+<% wkday = Date.today.strftime("%A")%>
+<% month = Date.today.strftime("%B")%>
+<% mday = Date.today.mday.to_s%>
+<% if mday.split.size == 1 %>
+			<% mday = mday.split.unshift("0").join %>
+<% end %>
+<% year = Date.today.year.to_s%>
+
+
+
+<p>The date is <%= wkday + ", " + month + " " + mday + ", " + year%></p>
