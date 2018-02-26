@@ -8,8 +8,9 @@ gem 'rake'
 gem 'thin'
 gem 'shotgun'
 gem 'pry'
+# gem 'date'
 gem 'require_all'
-    
+
 group :test do
   gem 'rspec'
   gem 'capybara'
