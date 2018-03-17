@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sinatra Views Lab</title>
+  </head>
+
+  <body>
+    <h1>Today</h1>
+    <% d = DateTime.now %>
+    <p><%=d.strftime("The date is %A, %B %e, %Y")%></p>
+  </body>
+</html>
