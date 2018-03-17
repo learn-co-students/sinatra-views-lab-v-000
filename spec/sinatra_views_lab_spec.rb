@@ -1,3 +1,4 @@
+require 'pry'
 describe App do
 
   describe 'GET /hello' do
@@ -17,6 +18,7 @@ describe App do
   describe 'GET /goodbye' do
     before do
       get '/goodbye'
+      #binding.pry
     end
 
     it 'sends a 200 status code' do
@@ -30,6 +32,7 @@ describe App do
   describe 'GET /date' do
     before do
       get '/date'
+      #binding.pry
     end
 
     it 'sends a 200 status code' do
@@ -49,4 +52,3 @@ describe App do
     end
   end
 end
-
