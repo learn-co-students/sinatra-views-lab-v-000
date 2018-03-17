@@ -1,0 +1,6 @@
+<% time = Time.new %>
+<% day = time.wday %>
+<% days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %>
+<% month = time.month %>
+<% months = [nil, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %>
+<h1>The date is <%= days[day] %>, <%= months[month] %> <%= time.day %>, <%= time.year %></h1>
