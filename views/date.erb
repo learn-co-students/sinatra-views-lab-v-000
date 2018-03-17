@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Today View!!</title>
+    </head>
+    <body>
+        <%date = Time.now%>
+        <%year = date.strftime("%Y")%>
+        <%month = date.strftime("%B")%>
+        <%day = date.strftime("%A")%>
+        <%day_num = date.strftime("%d")%>
+        <h1>Today</h1>
+        <p>The date is <%=day%>, <%=month%> <%=day_num%>, <%=year%></p>
+    </body>
+</html>
