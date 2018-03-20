@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <% dt = DateTime.now %>
+    <!-- <%= "The date is #{dt.strftime('%A')}, #{dt.month} #{dt.day}, #{dt.year}" %> -->
+    <h1><%= "The date is #{dt.strftime('%A')}, #{dt.strftime('%B')} #{dt.day}, #{dt.year}" %></h1>
+  </body>
+</html>
