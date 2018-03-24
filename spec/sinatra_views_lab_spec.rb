@@ -10,7 +10,7 @@ describe App do
     end
 
     it 'renders a template called "hello.erb" ' do
-      expect(last_response.body).to eq(File.read("views/hello.erb"))
+      expect(last_response.body).to include("Hello World")
     end
   end
 
@@ -49,4 +49,3 @@ describe App do
     end
   end
 end
-
