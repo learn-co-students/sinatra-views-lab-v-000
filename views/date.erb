@@ -1,0 +1,49 @@
+<% d = DateTime.now%>
+
+<!-- This is for setting the DOW -->
+<%  case d.wday %>
+<%  when 1 %>
+<%  w = "Monday" %>
+<%  when 2 %>
+<%  w = "Tuesday" %>
+<%  when 3 %>
+<%  w = "Wednesday" %>
+<%  when 4 %>
+<%  w = "Thursday" %>
+<%  when 5 %>
+<%  w = "Friday" %>
+<%  when 6 %>
+<%  w = "Saturday" %>
+<%  when 7 %>
+<%  w = "Sunday" %>
+<%  end %>
+
+<!-- This is for setting the Month -->
+<%  case d.month %>
+<%  when 1 %>
+<%  m = "January" %>
+<%  when 2 %>
+<%  m = "February" %>
+<%  when 3 %>
+<%  m = "March" %>
+<%  when 4 %>
+<%  m = "April" %>
+<%  when 5 %>
+<%  m = "May" %>
+<%  when 6 %>
+<%  m = "June" %>
+<%  when 7 %>
+<%  m = "July" %>
+<%  when 8 %>
+<%  m = "August" %>
+<%  when 9 %>
+<%  m = "September" %>
+<%  when 10 %>
+<%  m = "October" %>
+<%  when 11 %>
+<%  m = "November" %>
+<%  when 12 %>
+<%  m = "December" %>
+<%  end %>
+
+<h1> <%= "The date is #{w}, #{m} #{d.day}, #{d.year}."  %> </h1>
