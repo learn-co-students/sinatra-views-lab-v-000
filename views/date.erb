@@ -1,14 +1,16 @@
-<% require 'date' %>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Date</title>
-  </head>
-  <body>
 
-    <h1>Today</h1>
-    <p><%= "The date is #{Date.today.strftime("%A")}, #{Date.today.strftime("%B")} #{Date.today.strftime("%d")}, #{Date.today.strftime("%Y")}" %></p>
-  </body>
-</html>
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <title>Date</title>
+   </head>
+   <body>
+
+     <h1>Today</h1>
+     <p><%= "The date is #{Date.today.strftime("%A")}, #{Date.today.strftime("%B")} #{Date.today.strftime("%d")}, #{Date.today.strftime("%Y")}" %></p>
+   </body>
+ </html>
+
+<p> The date is <%= Date.today.strftime("%A, %B %d, %Y") %> </p>
