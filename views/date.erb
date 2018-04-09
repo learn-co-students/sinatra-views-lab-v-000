@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date File</title>
+    </head>
+    <body>
+        <% todays_date = DateTime.parse(DateTime.now.to_s) %>
+        <h1>Today</h1>
+        <h2>h2 tag</h2>
+        <p>The date is <%= todays_date.strftime('%A, %B %d, %Y') %></p>
+    </body>
+</html>
