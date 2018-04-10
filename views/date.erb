@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% DAYNAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %>
+    <% MONTHNAMES = ["nil", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %>
+  </head>
+  <body>
+    <% d = Date.today %>
+    <p><%= "The date is #{DAYNAMES[d.wday]}, #{MONTHNAMES[d.mon]} #{d.mday}, #{d.year}." %></p>
+  </body>
+
+
+</html>
