@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Date and time</title>
+  </head>
+  <body>
+    <h1>Today</h1>
+    <% require 'date' %>
+    <% curr_date = DateTime.now %>
+    <p>The date is <%= curr_date.strftime("%A, %B %d, %Y") %></p>
+  </body>
+</html>
