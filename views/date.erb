@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Date</title>
+  </head>
+  <body>
+    <h1>Today</h1>
+    <% @now = DateTime.now %>
+    <%= "The date is #{@now.strftime('%A')}, #{@now.strftime('%B')} #{@now.strftime('%d')}, #{@now.year}" %>
+  </body>
+</html>
