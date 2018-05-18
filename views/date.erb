@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>
+      <% today = DateTime.now.strftime("%B %d, %Y") %>
+      <% weekday = DateTime.now.strftime("%A") %>
+      <%= "The date is day #{weekday}, #{today}"%>
+    </p>
+  </body>
+</html>
