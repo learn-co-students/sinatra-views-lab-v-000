@@ -1,0 +1,10 @@
+<h1>Today</h1>
+
+<% week_day = Date.today.strftime("%A")%>
+<% full_month = Date.today.strftime("%B")%>
+<% today_day = Date.today.strftime("%d")%>
+<% year = Date.today.strftime("%Y")%>
+
+
+
+<p>The date is <%= week_day%>, <%= full_month%> <%= today_day%>, <%= year%> </p>
