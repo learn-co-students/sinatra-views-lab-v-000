@@ -5,8 +5,8 @@
     </head>
     <body>
         <h1>Today</h1>
-        <% todays_date = DateTime.now %>
-        <p><%= "The date is " + todays_date.strftime("%A") + ", " + todays_date.strftime("%B") + " " + todays_date.strftime("%d") + ", " + todays_date.strftime("%Y") + "." %></p>
+        <% todays_date = Date.today %>
+        <p><%= "The date is " + todays_date.strftime("%A, %B, %d, %Y") %></p>
 
     </body>
 </html>
