@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+	  	<h1>Today</h1>
+	  	<p>
+			<% # format: "The date is Wednesday, November 18, 2015." %>
+			<% date = Time.now %>
+			<%= date.strftime("The date is %A, %B %d, %Y.") %>
+	  	</p>
+  </body>
+</html>
