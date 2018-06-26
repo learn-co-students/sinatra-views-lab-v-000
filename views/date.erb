@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Date</title>
+  </head>
+  <body>
+    <% date = Date.new(2018,6,-5)%>
+    <% today = date.strftime('%a %d %b %Y') %>
+
+    <h1><%= "The date is  #{date.strftime('%A')}, #{date.strftime('%B %d')}, #{date.strftime('%Y')}"%></h1>
+  </body>
+</html>
