@@ -1,2 +1,6 @@
+<%require 'date'%>
 
-<h1> Today </h1>
+<%today = Date.today.strftime(%A, %B, %e, %Y)%>
+
+<h1> Today</h1>
+<p> The date is <%=today%></p>
