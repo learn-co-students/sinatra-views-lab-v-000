@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Today</h1>
+    <% daynames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] %>
+    <% monthnames = ["January" , "February" , "March" , "April", "May", "June", "July", "August", "September", "October", "November", "December"] %>
+    <% t = Time.now %>
+    <p><%= "The date is #{daynames[t.wday-1]}, #{monthnames[t.month-1]} #{t.day}, #{t.year}." %></p>
+  </body>
+</html>
