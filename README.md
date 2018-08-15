@@ -18,7 +18,7 @@ directory and a route in `app.rb` which renders that template. Make sure each
 template contains the requested content.
 
 Run `shotgun` to start a local server so that you can test your app in your
-browser. Once your application is running, assuming port 9393, the shotgun
+browser. Once your applibucation is running, assuming port 9393, the shotgun
 default, you should be able to hit the following local urls:
 http://localhost:9393/hello, http://localhost:9393/goodbye, and
 http://localhost:9393/date.
