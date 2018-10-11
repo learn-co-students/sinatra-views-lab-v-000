@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+  </head>
+  <body>
+    <p><%d = DateTime.now%></p>
+    <p><%month_name = Date::MONTHNAMES[d.month]%></p>
+    <p><%day_name = Date::DAYNAMES[d.wday]%></p>
+    <p><%date_num = d.day%></p>
+    <p><%year = d.year%></p>
+
+    <p>The date is <%=day_name%>, <%=month_name%> <%=date_num%>, <%=year%>. </p>
+
+
+
+  </body>
+</html>
