@@ -1,0 +1,4 @@
+<h1>Today</h1>
+<p><% d = DateTime.now %> </p>
+<!-- <p><%= "The date is Wednesday, November 18, 2015"%></p> -->
+<p><%= "The date is,"%> <%= d.strftime("%A")%>, <%= d.strftime("%B")%> <%= d.strftime("%d")%>, <%= d.strftime("%Y")%></p>
