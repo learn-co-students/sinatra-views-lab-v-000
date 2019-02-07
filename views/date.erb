@@ -4,9 +4,9 @@
   
   <h1>Today</h1>
   
-  <% t = time.now %>
+  <% t = Time.now %>
   
-  <% time = t.strftime("The date is %A, %B %M, %Y") %>
+  <% time = t.strftime("The date is %A, %B %d, %Y") %>
   
   <p><%= time %></p>
 
