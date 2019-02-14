@@ -2,6 +2,6 @@
 <html>
   <h1>Today</h1>
   <% datetime = Time.now %>
-  <% datetime = t.strftime("The date is %A, %B %d, %Y") %>
+  <% datetime = datetime.strftime("The date is %A, %B %d, %Y") %>
   <p><%= datetime %></p>
 </html>
