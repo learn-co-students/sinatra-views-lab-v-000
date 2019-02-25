@@ -1,8 +1,8 @@
 
-<h1>"Today"</h1>
-<!-- <p>"The date is <%= DateTime: 2015-11-18"%></p> -->
 
 
-<p>The date is<%="Time.now.strftime("%A, %B, %d, %Y)"%></p>
 
-<%end%>
+      <h1>Today</h1>
+      <% date = Date.today.strftime("%A, %B %d, %Y") %>
+      <p>The date is <%= date %></p>
+  
