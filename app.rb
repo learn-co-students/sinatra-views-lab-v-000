@@ -1,6 +1,6 @@
 class App < Sinatra::Base
 
-	
+
 	get '/' do
 		erb :index
 	end
@@ -19,7 +19,7 @@ class App < Sinatra::Base
 
 
 	get '/date' do
-		"Today"
+		
 		erb :date
 	end
 
