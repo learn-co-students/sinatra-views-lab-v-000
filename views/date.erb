@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Today's Date</title>
+  </head>
+  <body>
+    <% require 'date' %>
+    <% todays_date =  Date.today.strftime("%A, %B %d, %Y") %>
+    <p><%= "The date is #{todays_date}" %></p>
+  </body>
+</html>
