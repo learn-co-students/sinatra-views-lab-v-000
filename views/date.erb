@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Today</h1>
+    <% time= Time.now %>
+    <% if time.wday == 5  %>
+    <% timeday = "Friday" %>
+    <% end %>
+    <% if time.month == 4  %>
+    <% timemonth = "April" %>
+    <% end %>
+    <% time.strftime("%Y-%m-%d %H:%M:%S") %>
+    <p><%="The date is #{timeday}, #{timemonth} #{time.day}, #{time.year}." %></p>
+    <!-- <p><%= time.inspect %></p> -->
+
+
+  </body>
+</html>
