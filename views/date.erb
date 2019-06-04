@@ -1,11 +1,2 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>My First View!!</title>
-    </head>
-    <body>
-      <% current_date = DateTime.now.strftime('%A, %B %d, %Y')%>
-      <h1<%="Today" %></h1>
-        <p><%="The date is #{current_date}." %></p>
-    </body>
-</html>
+<% current_date = DateTime.now.strftime('%A, %B %d, %Y')%>
+<p><%="The date is #{current_date}." %></p>
