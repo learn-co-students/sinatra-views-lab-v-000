@@ -1,0 +1,15 @@
+<% require 'date' %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CPD ERB Lab!!!</title>
+    </head>
+    <body>
+        <% today = DateTime.now  %>
+
+        <h1>Today</h1>
+				<p><%= "The date is #{today.strftime('%A, %B %d, %Y')}." %></p>
+    </body>
+</html>
+
