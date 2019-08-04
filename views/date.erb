@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p>The date is
+        </p>
+        <% time = Time.now %>
+        <%= "#{time.strftime("%A")}, #{time.strftime("%B")} #{time.strftime("%d")}, #{time.year}" %>
+    </body>
+</html>
