@@ -1,0 +1,31 @@
+<%def month(int)
+  case int
+  when 1
+    "January"
+  when 2
+    "February"
+  when 3
+    "March"
+  when 4
+    "April"
+  when 5
+    "May"
+  when 6
+    "June"
+  when 7
+    "July"
+  when 8
+    "August"
+  when 9
+    "September"
+  when 10
+    "October"
+  when 11
+    "November"
+  when 12
+    "December"
+  end
+end%>
+
+
+<h1><p>The date is <%= "Friday, " + month(Time.now.month) + " " + Time.now.day.to_s + ", " + Time.now.year.to_s %> </p></h1>
