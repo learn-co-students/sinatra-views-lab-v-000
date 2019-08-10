@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Today</h1>
+    <% require 'date'
+      t = DateTime.now
+      day = t.strftime("%A")
+      month = t.strftime("%B") %>
+    <p><%= "The date is #{day}, #{month} #{t.day}, #{t.year}."  %></p>
+  </body>
+</html>
