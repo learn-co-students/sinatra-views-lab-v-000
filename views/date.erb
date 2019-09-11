@@ -4,11 +4,11 @@
   </head>
   <body>
     <h1>Today</h1>
-    <%date = DateTime.now.to_s%>
-    <%date_comp = date.split('-')%>
-    <%year= date_comp[0]%>
-    <%day = date_comp[2]%>
-    <%month = date_comp[1]%>
-    <p>The date is <%="#{date}"%>, <%="#{month}"%> <%="#{day}"%>, <%="#{year}"%></p>
+    <%date = DateTime.now%>
+    <%weekday = date.strftime("%A")%>
+    <%month = date.strftime("%B")%>
+    <%day = date.strftime("%e")%>
+    <%year = date.strftime("%Y")%>
+    <p>The date is <%="#{weekday}"%>, <%="#{month}"%> <%="#{day}"%>, <%="#{year}"%></p>
   </body>
 </html>
