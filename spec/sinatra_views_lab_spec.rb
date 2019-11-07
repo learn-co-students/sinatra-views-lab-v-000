@@ -1,6 +1,6 @@
 describe App do
 
-  puts describe 'GET /hello' do
+ describe 'GET /hello' do
     before do
       get '/hello'
     end
@@ -14,7 +14,7 @@ describe App do
     end
   end
 
-  puts describe 'GET /goodbye' do
+   describe 'GET /goodbye' do
     before do
       get '/goodbye'
     end
@@ -27,7 +27,8 @@ describe App do
       expect(last_response.body).to include("Goodbye Joe")
     end
   end
-  puts describe 'GET /date' do
+
+ describe 'GET /date' do
     before do
       get '/date'
     end
