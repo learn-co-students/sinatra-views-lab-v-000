@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 <html>
   <body>
-    <h1>The date is<% Time.now %></h1>
+    <% today = Date.today.strftime("%A, %B %d, %Y") %>
+    <p>The date is <%= today %></p>
   </body>
 </html>
