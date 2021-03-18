@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Today</h1>
+    <% require 'date' %>
+    <% date = DateTime.now %>
+    <% fmt_date = date.strftime("%A, %B %e, %Y") %>
+    <p>The date is <%= fmt_date %></p>
+  </body>
+</html>
